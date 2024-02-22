@@ -1,0 +1,28 @@
+1) Clone (If required) and get URL(.git) of GitHub Repo(https://github.com/asecurityguru/devsecops-jenkins-sast-sca-iac-cs-dast-e2e-repo.git)
+
+2)
+Java11 ((https://www.oracle.com/in/java/technologies/javase/jdk11-archive-downloads.html), 
+Jenkins 2.375.1 (https://www.jenkins.io/download/thank-you-downloading-windows-installer-stable), 
+Docker Desktop(https://docs.docker.com/desktop/install/windows-install/), 
+Python Custom installation and environment variables >=3.9 (https://www.python.org/ftp/python/3.9.12/python-3.9.12-amd64.exe) , 
+Snyk CLI in a folder and keep location of that folder (https://github.com/snyk/cli/releases), 
+Maven (https://maven.apache.org/download.cgi), Terraform >=0.12 (https://developer.hashicorp.com/terraform/downloads), 
+OWASP ZAP (https://github.com/zaproxy/zaproxy/releases/download/v2.12.0/ZAP_2.12.0_Crossplatform.zip) should be downloaded and configured as environment variable
+
+3) Download and run SonarQube image in Docker using commands:
+      docker run -d --name sonarqube -p 9000:9000 -p 9092:9092 sonarqube
+
+4) Define maven configuration in Jenkins
+
+5) Download ZAP(https://github.com/zaproxy/zaproxy/releases/download/v2.12.0/ZAP_2.12.0_Crossplatform.zip) and extract zip file and place in a folder and keep path
+
+6) Upgrade pip
+pip3 install --upgrade pip && pip3 install --upgrade setuptools
+
+7) Install checkov using pip3
+pip3 install checkov
+
+8) Install Docker Pipeline plugin in Jenkins
+
+9) Defined SONAR_TOKEN, dockerlogin, SNYK_TOKEN, GitHub Token(If private repo) credentials in Jenkins Credentials Manager 
+
